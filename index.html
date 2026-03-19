@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Caleb Oppong</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Caleb Oppong
+          <div class="contact_info">
+            <img src="envelope.png" alt="Email icon" />
+            <span>com@jeemail.com</span>
+          </div>
+          <div class="contact_info">
+            <img src="phone.png" alt="Phone icon" />
+            <span>+13456764598</span>
+          </div>
+        </div>
+
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="about-me" class="container">
+      <div class="about-image-wrap">
+        <img
+          src="geralt-presentation-10174584_1920.jpg"
+          alt="Developer illustration"
+          class="profile_image"
+        />
+      </div>
+
+      <div class="about-text">
+        <h1>
+          Hi, I'm Caleb Oppong!
+          <img src="waving-hand.png" alt="Waving hand" width="60" />
+        </h1>
+        <p>
+          I am a passionate full-stack developer with experience in building
+          both front-end and back-end applications. I enjoy creating
+          user-friendly interfaces and developing efficient, scalable
+          solutions. I have worked with modern technologies and continuously
+          strive to improve my skills while delivering high-quality
+          applications.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html5.png" alt="HTML logo" />
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="js.jpeg" alt="JavaScript logo" />
+          <h6>JavaScript</h6>
+          <p>1.5 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="java.png" alt="Java logo" />
+          <h6>Java</h6>
+          <p>0.5 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="react.png" alt="React logo" />
+          <h6>React</h6>
+          <p>1 year experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="node.png" alt="Node.js logo" />
+          <h6>Node.js</h6>
+          <p>1 year experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="CSS3.png" alt="CSS logo" />
+          <h6>CSS</h6>
+          <p>2 years experience</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>CO Chatbot</h3>
+          <ul>
+            <li>
+              Designed and developed a secure web application for an automobile
+              client, integrating a chatbot using IBM Watson Assistant. Built
+              using HTML, CSS, and JavaScript to ensure a responsive and
+              user-friendly experience.
+            </li>
+          </ul>
+        </div>
+        <hr />
+
+        <div class="project-card">
+          <h3>CO Sentiment Analyzer</h3>
+          <ul>
+            <li>
+              Developed and deployed a sentiment analysis system for the reviews
+              section of an eCommerce platform using IBM Natural Language
+              Understanding (NLU), enabling automated analysis of customer
+              feedback.
+            </li>
+          </ul>
+        </div>
+        <hr />
+
+        <div class="project-card">
+          <h3>CO Fashion Website</h3>
+          <ul>
+            <li>
+              Designed and created a multi-page eCommerce website for a fashion
+              brand, integrating a shopping cart and secure payment gateway
+              using Stripe. Focused on responsive design and seamless user
+              experience.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Caleb consistently demonstrates strong problem-solving skills and a
+          deep understanding of web development concepts. He collaborates
+          effectively within teams and delivers high-quality work with attention
+          to detail and professionalism.
+          <span>&#8221;</span>
+        </div>
+
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Caleb has been a rewarding experience. He is proactive,
+          adaptable, and always eager to learn new technologies. His ability to
+          communicate ideas clearly makes him a valuable team member.
+          <span>&#8221;</span>
+        </div>
+
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Caleb is a dedicated developer who approaches every project with
+          enthusiasm and focus. He shows excellent technical ability, takes
+          initiative when needed, and contributes positively to team success and
+          project outcomes.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>
+          <input
+            id="recommender_name"
+            type="text"
+            placeholder="Name (Optional)"
+          />
+          <textarea
+            id="new_recommendation"
+            placeholder="Message"
+            rows="5"
+          ></textarea>
+          <button id="recommend_btn" onclick="addRecommendation()">
+            Submit
+          </button>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home" aria-label="Back to top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="white"
+          width="28"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <img src="checkmark--outline.svg" alt="checkmark" width="40" />
+        <h3>Thanks for leaving a recommendation!</h3>
+        <button onclick="showPopup(false)">Ok</button>
+      </div>
+    </div>
+  </body>
+</html>
